@@ -1,0 +1,170 @@
+/* Variables */
+:root {
+    --primary-color: #21AAE1;
+    --secondary-color: #ffffff;
+    --dark-color: #333;
+    --light-gray: #f4f6f8;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    --radius: 15px;
+    --transition: all 0.3s ease;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.register-container {
+    width: 100%;
+    max-width: 1100px; /* Aumentado el tamaño horizontal */
+    background: var(--secondary-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+}
+
+/* Lado Izquierdo */
+.register-left {
+    background-color: var(--primary-color);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.register-left .logo {
+    max-width: 200px; /* Tamaño del logo aumentado */
+    margin-bottom: 1rem;
+}
+
+.register-left .slogan {
+    font-size: 1.7rem; /* Tamaño ajustado */
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.register-left .description {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Lado Derecho */
+.register-right {
+    flex: 2; /* Más espacio al lado derecho */
+    padding: 2rem;
+}
+
+.register-right h1 {
+    font-size: 2rem; /* Título más grande */
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(33, 170, 225, 0.4);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cancel-btn:hover {
+    background-color: #bbb;
+}
+
+.confirm-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.confirm-btn:hover {
+    background-color: #1998c9;
+}
+
+.already-account {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.already-account a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+
+    .register-left {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .register-right {
+        padding: 1.5rem;
+    }
+}
