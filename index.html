@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANDIN - Conectamos conocimiento</title>
+    <meta name="description" content="Plataforma líder en eventos educativos, ponencias y cursos en formato presencial, en vivo y grabado.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <div class="nav-left">
+                <a href="/" class="nav-logo" aria-label="Inicio">
+                    <img src="assets/images/logo.svg" alt="HANDIN Logo">
+                </a>
+                <button class="explore-btn" aria-expanded="false" aria-controls="explore-menu">
+                    <span>Explorar eventos</span> 
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar eventos, ponencias o cursos" aria-label="Buscar">
+                    <button type="submit" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#ponencias">Ponencias</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#organizadores">Organizadores</a>
+                <a href="#login" class="btn-login">Iniciar sesión</a>
+                <a href="#register" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="video-container">
+            <video autoplay muted loop playsinline aria-hidden="true">
+                <source src="assets/videos/hero-background.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title">APRENDE SIN LÍMITES</h1>
+                <p>Descubre eventos educativos, ponencias y cursos en formato presencial, en vivo y grabado.</p>
+                <div class="hero-buttons">
+                    <a href="#explorar" class="btn btn-primary">Explorar eventos</a>
+                    <a href="#registro" class="btn btn-secondary">Crear cuenta gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades -->
+    <section class="modalities" aria-labelledby="modalities-title">
+        <div class="container">
+            <h2 id="modalities-title" class="visually-hidden">Modalidades de Eventos</h2>
+            <div class="modalities-grid">
+                <div class="modality-card presencial">
+                    <div class="modality-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Presencial</h3>
+                    <p>Asiste a eventos y conecta con profesionales en persona</p>
+                    <a href="#presencial" class="modality-link">Ver eventos</a>
+                </div>
+                <div class="modality-card live">
+                    <div class="modality-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>En vivo</h3>
+                    <p>Participa en tiempo real desde cualquier lugar</p>
+                    <a href="#envivo" class="modality-link">Próximas sesiones</a>
+                </div>
+                <div class="modality-card recorded">
+                    <div class="modality-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Grabado</h3>
+                    <p>Accede a contenido en cualquier momento</p>
+                    <a href="#grabado" class="modality-link">Ver biblioteca</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Destacados -->
+    <section class="featured-events" aria-labelledby="featured-events-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="featured-events-title">Eventos destacados</h2>
+                <a href="#todos" class="view-all">
+                    Ver todos los eventos 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="events-grid">
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="assets/images/event1.jpg" alt="Innovación en Tecnologías">
+                        <div class="event-badge live">
+                            <i class="fas fa-circle live-indicator"></i>
+                            EN VIVO
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span>
+                                <i class="far fa-calendar"></i> 15 Mar 2024
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i> 19:00 hrs
+                            </span>
+                        </div>
+                        <h3>Innovación en Tecnologías Emergentes</h3>
+                        <p>Conferencia sobre las últimas tendencias en IA y Machine Learning</p>
+                        <div class="event-footer">
+                            <span class="price">S/ 299.00</span>
+                            <a href="#comprar" class="btn-ticket">
+                                <i class="fas fa-ticket-alt"></i> Comprar ticket
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="assets/images/event2.jpg" alt="Liderazgo Digital">
+                        <div class="event-badge presencial">
+                            <i class="fas fa-map-marker-alt"></i>
+                            PRESENCIAL
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span>
+                                <i class="far fa-calendar"></i> 20 Mar 2024
+                            </span>
+                            <span>
+                                <i class="far fa-clock"></i> 10:00 hrs
+                            </span>
+                        </div>
+                        <h3>Liderazgo en la Era Digital</h3>
+                        <p>Estrategias para liderar equipos en entornos digitales</p>
+                        <div class="event-footer">
+                            <span class="price">S/ 499.00</span>
+                            <a href="#comprar" class="btn-ticket">
+                                <i class="fas fa-ticket-alt"></i> Comprar ticket
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="assets/images/event3.jpg" alt="Desarrollo Web">
+                        <div class="event-badge recorded">
+                            <i class="fas fa-play-circle"></i>
+                            GRABADO
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span>
+                                <i class="fas fa-clock"></i> 4 horas
+                            </span>
+                            <span>
+                                <i class="fas fa-play-circle"></i> Acceso inmediato
+                            </span>
+                        </div>
+                        <h3>Desarrollo Web Avanzado</h3>
+                        <p>Masterclass práctica sobre desarrollo web moderno</p>
+                        <div class="event-footer">
+                            <span class="price">S/ 199.00</span>
+                            <a href="#acceder" class="btn-ticket btn-recorded">
+                                <i class="fas fa-play"></i> Acceder ahora
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.svg" alt="HANDIN" class="footer-logo">
+                    <p>Conectamos conocimiento desde 2019</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Plataforma</h3>
+                        <ul>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#ponencias">Ponencias</a></li>
+                            <li><a href="#tickets">Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#privacidad">Privacidad</a></li>
+                            <li><a href="#terminos">Términos</a></li>
+                            <li><a href="#cookies">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#privacidad">Privacidad</a>
+                    <a href="#terminos">Términos</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+                <div class="social-links">
+                    <a href="#twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2024 HANDIN. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
